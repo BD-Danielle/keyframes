@@ -1,0 +1,2635 @@
+/* CSS Document */
+@import url("https://imgs.click108.com.tw/css_2013/reset_2.css");
+body {
+	box-sizing: border-box;
+	font-family: "微軟正黑體","新細明體", "細明體", Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+
+/*共用間距*/
+.PC #it244 .blank_br {height: 20px;}
+.PC #it244 .blank_br2 {height: 40px;}
+.PC #it244 .blank_s {height: 10px;}
+
+.MOBILE #it244 .blank_br {height: 15px;}
+.MOBILE #it244 .blank_br2 {height: 30px;}
+.MOBILE #it244 .blank_s {height: 10px;}
+
+/*消失區*/
+.PC #float_icon , .PC #it244 .formb_bt , .PC #it244 .PCNO_WORDS ,.PC #it244 .FREE_NO_WORDS{display: none;}
+
+/*=================電腦版=================*/
+/*顏色樣式*/
+#it244 .purple {color: #6124b4;}
+#it244 .red {color: #e42f2f;}
+#it244 .pink {color: #f54478;}
+#it244 .green {color: #2e6e00;}
+
+
+/*=======#it244-wrapper置底浮水印按鈕========*/
+/*置底浮水印按鈕for PC*/
+.PC #it244-wrapper .DOWN_BAR {
+	width: 100%;
+	height: auto;
+	position: fixed;
+	bottom: 0;
+	background-image: url(../images/bt_bg.png);
+	background-repeat: repeat-x repeat-y;
+	z-index: 9999;
+	padding: 10px 0;
+}
+	
+.PC #it244-wrapper .BT_AREA{
+	width: 490px;/*500*/
+	height: auto;
+	margin: 0 auto;
+}
+.PC #it244-wrapper .BT_AREA a.ONE{
+	display: block;
+	width:320px;
+	margin:0 auto;
+	height:48px;
+}
+
+.PC #it244-wrapper .BT_AREA a{
+	display: block;
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 48px;
+	text-align: center;
+	color: #ffffff;
+	margin: 0 auto;
+	width: 220px;
+	height: 48px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: #81b907; /* Old browsers */
+	background: -webkit-linear-gradient(#81b907 0%, #347f0b 100%);
+	background: -o-linear-gradient(#81b907 0%, #347f0b 100%);
+	background: linear-gradient(#81b907 0%, #347f0b 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81b907', endColorstr='#347f0b',GradientType=0 ); /* IE6-9 */
+
+	-moz-box-shadow:
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		inset 0px 0px 2px rgba(255,255,255,1);
+	margin-left: 10px;}
+
+.PC #it244-wrapper .BT_AREA a:hover{
+	color:#fff9bc;
+	background: #347f0b; /* Old browsers */
+	background: -moz-linear-gradient(top, #347f0b 0%, #81b907 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #347f0b 0%,#81b907 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #347f0b 0%,#81b907 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#347f0b', endColorstr='#81b907',GradientType=0 ); /* IE6-9 */
+}
+
+/*右側浮水印*/
+.PC #it244-wrapper .float_case{
+	width: 250px;
+    height: 188px;
+    position: fixed;
+    bottom: 220px;
+    right: 30px;
+    overflow: hidden;
+	z-index: 500;
+} 
+
+.PC #it244-wrapper .float_box{
+	position: relative;
+	width: 250px;
+	height: 188px;
+	overflow: hidden;
+	background-image: url(../images/free/float_bg.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.PC #it244-wrapper .float_box .close_bt{
+	position: absolute;
+	top:0px;
+	right:0px;
+	width:40px;
+	height: 40px;
+	background-color: grey;
+    opacity: 0.3;
+}
+
+.PC #it244-wrapper .float_box .close_bt:hover{opacity: 0.8;}
+
+.PC #it244-wrapper .float_box .close_bt a{
+	display: block;
+	width:40px;
+	height: 40px;
+	text-indent: -9999px;
+}
+
+.PC #it244-wrapper .float_box .close_bt a::before {
+	transform: rotate(45deg);
+  }
+
+.PC #it244-wrapper .float_box .close_bt a::after {
+	transform: rotate(-45deg);
+  }
+
+.PC #it244-wrapper .float_box .close_bt a::before ,.PC #it244-wrapper .float_box .close_bt a::after{
+	position: absolute;
+    top: 0;
+    left: 50%;
+    width: 3px;
+    height: 40px;
+    background-color: #fff;
+    content: "";
+}
+
+.PC #it244-wrapper .float_bt{
+	position: absolute;
+	bottom:20px;
+	left: 0px;
+	width:100%;
+	height: auto;
+}
+
+.PC #it244-wrapper .float_bt a{
+	display: block;
+	width:80%;
+	height: 45px;
+	line-height: 45px;
+	font-size:1.2rem;
+}
+
+/*置底浮水印按鈕for Mobile*/
+.MOBILE #it244-wrapper .DOWN_BAR {
+	width: 100%;
+	height: auto;
+	position: fixed;
+	bottom: 0;
+	background-image: url(../images/bt_bg.png);
+	background-repeat: repeat-x repeat-y;
+	z-index: 9999;
+	padding: 10px 0;
+}
+
+.MOBILE #it244-wrapper .BT_AREA{
+	width: 100%;/*500*/
+	height: auto;
+	margin: 0 auto;
+}
+.MOBILE #it244-wrapper .BT_AREA a.ONE{
+	display: block;
+	width:95%;
+	margin:0 auto;
+	height:48px;
+}
+
+.MOBILE #it244-wrapper .BT_AREA a{
+	display: block;
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 48px;
+	text-align: center;
+	color: #ffffff;
+	margin: 0 auto;
+	width: 220px;
+	height: 48px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: #81b907; /* Old browsers */
+	background: -webkit-linear-gradient(#81b907 0%, #347f0b 100%);
+	background: -o-linear-gradient(#81b907 0%, #347f0b 100%);
+	background: linear-gradient(#81b907 0%, #347f0b 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81b907', endColorstr='#347f0b',GradientType=0 ); /* IE6-9 */
+
+	-moz-box-shadow:
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		inset 0px 0px 2px rgba(255,255,255,1);
+	margin-left: 10px;
+}
+
+.MOBILE #it244-wrapper .BT_AREA a:hover{
+	color:#fff9bc;
+	background: #347f0b; /* Old browsers */
+	background: -moz-linear-gradient(top, #347f0b 0%, #81b907 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #347f0b 0%,#81b907 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #347f0b 0%,#81b907 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#347f0b', endColorstr='#81b907',GradientType=0 ); /* IE6-9 */
+}
+
+/*=================整體框架區塊=================*/
+.PC #it244{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment: fixed;
+	background-color: #fb4157;
+	-webkit-box-sizing: border-box;
+}
+
+.PC #it244 .frame{
+	width: 100%;
+	height: auto;
+	overflow:hidden;
+	margin:0 auto;
+}
+
+.PC #it244 .content_top img ,
+.PC #it244 .content_foot img{
+    display: block;
+    width:100%;
+    height: auto;
+    margin:0 auto;
+}
+
+/*=================結果頁框架=================*/
+.PC #it244 .content{
+	width: 750px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    background-image: url(../images/deco_bg.jpg);
+    background-size: 100% auto;
+	margin-bottom:20px;
+}
+
+.PC #it244 .result_top{
+	width:750px;
+	height:auto; 
+	overflow:hidden;
+	margin: 0 auto;
+}
+
+.PC #it244 .result_top h1{
+	width:750px;
+	height: 270px;
+	margin:0 auto;
+	background-image: url(../images/re_title_top.png);
+	background-size: contain;
+	background-position: top center;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}
+
+/*=================輸入頁區塊=================*/
+/*輸入頁表頭區塊*/
+.PC #it244 .input_frame{
+	width:100%;
+	height:645px; 
+	overflow:hidden;
+}
+
+.PC #it244 .input_top{
+	width:100%;
+	height:auto; 
+	overflow:hidden;
+margin:0 auto;
+}
+
+.PC #it244 .input_top h1{
+	width:700px;
+	height: 290px;
+	margin:0 auto;
+	background-image:url(../images/hero_title_input.png);
+	background-repeat: no-repeat;
+	text-indent:-9999px;
+}
+
+/*輸入頁動態區塊*/
+.PC #it244 .animation_block{
+	width:930px;
+	height: 386px;
+	margin:0 auto;
+	background-image: url(../images/hero_input_topbg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.PC #it244 .fatechart{
+	width:550px;
+	height: 315px;
+	margin:0 auto;
+	overflow: hidden;
+	background-image: url(../images/input/in_animated_bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.PC #it244 .fatechart .shine_area{
+	width:550px;
+	height: 315px;
+	margin:0 auto;
+	background-image: url(../images/input/in_animated_stars.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#it244 .fatechart .fadeinout{
+	animation-name: fadeInOut;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes fadeInOut {
+	0% { 
+		opacity: 1;
+	}
+	50% { 
+		opacity: 0.1;
+		filter: brightness(1.9);
+		filter: saturate(4);
+	}
+	100% { 
+		opacity: 1;
+		filter: brightness(1);
+	 }
+}
+
+/*輸入頁內容裝飾框架*/
+.PC #it244 .input_content{
+	width:750px;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto;
+	background-image:url(../images/deco_bg.jpg);
+	background-size:100% auto;
+}
+
+/*輸入頁內容區塊*/
+.PC #it244 .con_box{ 
+	width:670px;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto;
+}
+
+.PC #it244 .con_box img{
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+/*內文置底列印按鈕*/
+.PC #it244 .PRINT_BT{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 15px;
+	margin-bottom: 15px;}
+
+.PC #it244 .PRINT_BT a{
+	display:block;
+	width:50%;
+	margin:0 auto;
+	height:50px;
+	font-size: 1.5em;
+	color: #fff;
+	font-weight:bold;
+	text-align:center;
+	line-height:47px;
+	text-decoration:none;
+}
+
+/*按紐顏色*/	
+.PC #it244 a.BT_COLOUR{ /*置底列印按鈕綠色*/
+	background-color:#347f0b;
+	background: -moz-linear-gradient(
+		top,
+		#81b907 0%,
+		#347f0b);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#81b907),
+		to(#347f0b));
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border:1px solid #347f0b;
+	-moz-box-shadow:
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		inset 0px 0px 2px rgba(255,255,255,1);}
+
+.PC #it244 a.BT_COLOUR:hover{
+	background-color:#81b907;
+	background: -moz-linear-gradient(
+		top,
+		#347f0b 0%,
+		#81b907);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#347f0b),
+		to(#81b907));}
+
+/*第一則推廣區塊*/
+.PC #it244 .first_box{margin-top:10px;}
+.PC #it244 .second_box{
+	width:550px;
+	height: auto;
+	margin:0 auto;
+	overflow: hidden;
+}
+
+.PC #it244 .promo_block{
+	width:95%;
+	height: auto;
+	margin:0 auto;
+	overflow: hidden;
+}
+
+.PC #it244 .deco_line{
+	border-bottom: 2px solid #f2f2f2;
+    width: 100%;
+    margin: 22px auto;
+}
+
+.PC #it244 .deco_line2{
+	border-bottom: 1px solid #ddae58;
+    width: 78%;
+	margin:0 auto;
+	margin-bottom:20px;
+}.MOBILE #it244 .deco_line2{
+	border-bottom: 1px solid #ddae58;
+    width: 100%;
+	margin:0 auto;
+	margin-bottom:15px;}
+
+/*輸入頁 清單*/
+.PC #it244 .norm_case{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #bd0676;
+    box-sizing: border-box;
+}
+
+.PC #it244 .norm_case .norm_title{
+    width: 100%;
+    height: 60px;
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0px auto;
+}
+
+.PC #it244 .norm_case .bar1{
+	background-image: url(../images/title_bar.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.PC #it244 .norm_case .bar2{
+	background-color: #bd0676;
+	border: 1px solid #bd0676;
+}
+
+.PC #it244 .norm_case .norm_content{
+    width: 95%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.PC #it244 .icon-1{
+    background-image: url(../images/icon-1.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 32px auto;
+}
+
+.PC #it244 .norm_case .list_title{
+	width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.PC #it244 .norm_case .list_title::before{
+    content: '';
+    display: inline-block;
+    width:35px;
+    height: auto;
+    padding-right:0px;
+}
+
+.PC #it244 .norm_case .list_item{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom:15px;
+}
+
+.PC #it244 .norm_case .list_item .disc{
+    width: 100%;
+    list-style: disc;
+    list-style-position: outside;
+    padding: 0px 0px 0px 30px;
+    box-sizing: border-box;
+    font-size:1.25rem;
+    line-height: 2.3rem;
+}
+
+.PC #it244 .norm_case .list_item .marker li::marker{color:#af4f34;}
+
+.PC #it244 .norm_case .list_item .sec_item{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.PC #it244 .norm_case .list_item .sec_item li::before{
+    content:'∟';
+    display: inline-block;
+}
+
+.PC #it244 .norm_case .mg_bt0{margin-bottom:0px;}
+
+/*獨門絕學奇門遁甲區塊*/
+.PC #it244 .in_double_case{
+	width:95%;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:flex-start;
+	margin:0 auto;
+}
+
+.PC #it244 .in_double_case .inph_box{
+	width:35%;
+}.PC #it244 .in_double_case .inph_box img{
+	display: block;
+	width:100%;
+	height: auto;
+}
+
+.PC #it244 .in_double_case .inph_text{
+	width:62%;}
+
+/*=================列印頁區塊=================*/
+.PC #it244 .print_top{
+	width:680px;
+	height:213px;
+	margin:0 auto;
+}
+
+.PC #it244 .print_top img{
+	width:100%;
+	height: auto;
+}
+
+/*列印頁區塊-大圖標題*/
+.PC #it244 .print_bg {
+	width: 680px;
+	margin: 0 auto;
+	-webkit-box-sizing: border-box;
+}
+
+.PC #it244 .print_bg img {
+	display: block;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.PC #it244 .print_bg .two_block_main{
+	margin-top:15px;
+}
+
+/*列印頁區塊-內容框架*/
+.PC #it244 .print_bg .con_box{
+	width: 670px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.PC #it244 .print_bg .situation_block .s_ph{width:12%;}
+
+/*=================結果頁區塊=================*/
+
+/*雙欄配圖文字區塊*/
+.PC #it244 .two_block_main {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.PC #it244 .two_block_main ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.PC #it244 .two_block_main .item_ph {
+	width: 29%;
+	height: auto;
+}
+
+.PC #it244 .two_block_main .item_ph img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.PC #it244 .two_block_main .item_text {
+	width: 65%;
+}
+
+/*邊框*/
+.PC #it244 .border_frame{
+	box-sizing: border-box;
+	border: 3px solid #e83432;
+	border-top:none;
+}
+
+/*個人資料欄位*/
+.PC #it244 .INFO_BOX{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.PC #it244 .INFO_BOX p{
+	text-align: center;
+}
+
+.PC #it244 .INFO_BOX span.GENDER{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: -8px;
+}
+
+.PC #it244 .INFO_BOX span.GENDER img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*奇門遁甲本命命盤*/
+.PC #it244 .JIMEN_CHART{
+	width: 90%;
+	height: 480px;
+	overflow: hidden;
+	background-color: #eee;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.PC #it244 .JIMEN_CHART p{
+	font-weight:bold;
+	font-size: 2.2rem;
+	text-align: center;
+	color: #666666;
+}
+
+/*奇門遁甲時盤命盤*/
+.PC #it244 .JIMEN_CHART2{
+	width: 90%;
+	height: 480px;
+	overflow: hidden;
+	background-color: #e8f3e1;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.PC #it244 .JIMEN_CHART2 p{
+	font-weight:bold;
+	font-size: 2.2rem;
+	text-align: center;
+	color: #4c5d41;
+}
+
+/*本命表格欄位*/
+.PC #it244 .PV_BOARD{
+	width: 90%;
+}
+
+.PC #it244 .FOUR_BOX{
+	width: 100%;
+}
+
+.PC #it244 .FOUR_BOX li{
+	height: 45px;
+	line-height: 45px;
+}
+
+.PC #it244 .TWO_BOX li{
+	height: 45px;
+	line-height: 45px;
+}
+
+.PC #it244 .TWO_BOX{
+	width: 90%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.PC #it244 .T_BG_01{background-color: #eb6039;}
+.PC #it244 .T_BG_02{background-color: #9c4e02;}
+.PC #it244 .T_BOR_01{border:1px solid #eb6039;}
+.PC #it244 .T_BOR_02{border:1px solid #9c4e02;}
+
+/*結果頁-重點區塊*/
+.PC #it244 .p_pink{color:#FF1493;}
+
+/*第二標題區塊*/
+.PC #it244 .sub_title{
+	width: 100%;
+	height: auto;
+	margin:0 auto;
+	overflow: hidden;
+}
+
+.PC #it244 .sub_title p{
+	color:#555555;
+	font-size:1.7em;
+	font-weight: bold;
+	line-height: 1.7rem;
+	text-align: center;
+}
+
+.PC #it244 .point_scroll{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.PC #it244 .point_scroll .p_title{
+	width:100%;
+	font-size:1.8em;
+	text-align: center;
+}
+
+.PC #it244 .item_img01{
+	background-image: url(../images/result/ph-fate01.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.PC #it244 .item_img02{
+	background-image: url(../images/result/ph-fate02.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.PC #it244 .item_img03{
+	background-image: url(../images/result/ph-fate05.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.PC #it244 .point_scroll .items_box{
+	width:590px;
+	height: 120px;
+	margin:0 auto;
+}
+
+.PC #it244 .point_scroll .items_box p{
+	font-size:2.4em;
+	font-weight:bold;
+	line-height: 125px;
+	text-align: center;
+}
+
+/*結果頁-圖示項目清單*/
+.PC #it244 .icon_list{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.PC #it244 .icon_list ul{
+	width:100%;
+	box-sizing: border-box;
+	margin-top:10px;
+}
+
+.PC #it244 .icon_list ul.second_type{
+	margin-top:0px;
+	margin-bottom:10px;
+}
+
+.PC #it244 .icon_list li.icon-gods{
+	background: transparent url(../images/icon-2.png) no-repeat;
+	background-size: 28px 28px;
+	background-position-y: 1px;
+	padding-left: 35px;
+	margin-bottom:15px;
+}
+
+.PC #it244 .icon_list li.icon-bad-gods{
+	background: transparent url(../images/icon-2-2.png) no-repeat;
+	background-size: 28px 28px;
+	background-position-y: 1px;
+	padding-left: 35px;
+	margin-bottom:15px;
+}
+
+.PC #it244 .icon_list li:last-child{
+	margin-bottom:0px;
+}
+
+/*XX煞*/
+.PC #it244 .icon_list2{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.PC #it244 .icon_list2 ul{
+	width:100%;
+	box-sizing: border-box;
+	margin-top:10px;
+}
+
+.PC #it244 .icon_list2 li{
+	font-size:1.1em;
+	font-weight:bold;
+}
+
+.PC #it244 .icon_list2 li.icon-special{
+	background: transparent url(../images/icon-1.png) no-repeat;
+	background-size: 28px 28px;
+	background-position-y: 1px;
+	padding-left: 35px;
+	margin-bottom:6px;
+}
+
+.PC #it244 .icon_list2 .mg_t0{margin-top:0px;}
+
+/*XX煞 引導文字*/
+.PC #it244 .list_prewords{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+	margin:12px 0px 6px 0px;
+}
+
+/*裝飾框副標*/
+.PC #it244 .deco_frame{
+	width:100%;
+	height: auto;
+	margin:0 auto;
+	text-align: center;
+	background-color: #fff2d7;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.PC #it244 .deco_frame ul{
+	width:100%;
+	padding:5px 0px;
+	box-sizing: border-box;
+}
+
+.PC #it244 .deco_frame li{
+	font-weight:bold;
+	padding:5px 0px;
+	color:#d12427;
+}
+
+.PC #it244 .deco_frame li:nth-child(2){
+	color:#555555;
+}
+
+.PC #it244 .deco_frame .small_text{
+	font-size:1.8rem;
+	line-height: 2rem;
+}
+
+.PC #it244 .deco_frame .point_text{
+	font-size:2rem;
+	line-height: 2.2rem;
+}
+
+.PC #it244 .deco_frame img{
+	display: block;
+	width:92%;
+	height: auto;
+	margin:0 auto;
+}
+
+.PC #it244 .deco_frame .username-woman{color:#FF1493;}
+.PC #it244 .deco_frame .username-man{color:#0088ff;}
+
+/*結果頁-用神區塊*/
+.PC #it244 .thegods{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+	margin:15px 0px 10px 0px;
+}
+
+.PC #it244 .thegods .gods_box{
+	width: 432px;
+	height: 150px;
+	margin:0 auto;
+	overflow: hidden;
+}
+
+.PC #it244 .thegods .gods_box p{
+	text-align: center;
+	font-size:2.6em;
+	font-weight:bold;
+	line-height: 150px;
+	text-indent: 20%;
+}
+
+.PC #it244 .thegods .nice_gods{
+	color:#e90301;
+	background-image: url(../images/result/ph-fate03.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.PC #it244 .thegods .bad_gods{
+	color:#a300e6;
+	background-image: url(../images/result/ph-fate04.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*控制pq日曆*/
+.PC #it244 .pq_CALENDAR1 .TIME .MONTH{
+	font-size:1.4em;
+	line-height: 1.8rem;
+}
+
+.PC #it244 .pq_CALENDAR1 .TIME .T05{
+	font-size:1.1em;
+	line-height: 1.6rem;
+}
+
+.PC #it244 .calendar_area .pq_RECOM_BOX{padding:0px;}
+
+.PC #it244 .calendar_area .pq_CALENDAR1{margin:0px;}
+
+.PC #it244 .calendar_area .pq_CALENDAR1 .DATE .YEAR{
+	font-size:1.4em;
+	color:yellow;
+	margin-top:4px;
+}
+
+/*日曆說明文字區塊*/
+.PC #it244 .tips_area{
+	width:88%;
+	height: auto;
+	overflow: hidden;
+	margin:0 auto;
+}
+
+.PC #it244 .tips_area p{
+	font-size:1em;
+	line-height: 1.6rem;
+	color:red;
+}
+
+/*時盤說明文字區塊*/
+.PC #it244 .tips_area2{
+	width:90%;
+	height: auto;
+	overflow: hidden;
+	margin:0 auto;
+	margin-top:10px;
+}
+
+.PC #it244 .tips_area2 p{
+	font-size:1.1em;
+	line-height: 1.6rem;
+}
+
+/*時盤人資料欄位*/
+.PC #it244 .INFO_BOX_TIME{
+	width: 95%;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.PC #it244 .INFO_BOX_TIME .IN_TITLE{
+	color: #555555;
+	font-size: 1.6em;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5px;
+}
+/*時盤雙排2022*/
+.PC #it244 .INFO_BOX_TIME .times_box{
+	width:52%;
+	height: 60px;
+	overflow: hidden;
+	margin:0 auto;
+	display: flex;
+	flex-direction: row;
+	margin-bottom:10px;
+	border:1px solid #ff6476;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.PC #it244 .times_box .square_title{
+	width:23%;
+	height: 60px;
+	line-height: 60px;
+	background-color: #ff6476;
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color:#ffffff;
+}
+
+.PC #it244 .times_box .times_info{
+	width:77%;
+	height: 60px;
+}
+
+.PC #it244 .times_box .times_info ul{
+	width:100%;
+	height: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.PC #it244 .times_box .times_info li{
+	font-size:1.1em;
+	line-height: 1.6rem;
+}
+
+/*撥雲動畫-PC*/
+.PC #it244 .ANI_BOX{
+	width: 90%;
+	height: auto;
+	overflow: hidden;
+	margin: 20px auto;
+	border: 2px solid #970016;
+	background-color: #492505;
+	box-sizing: border-box;
+}
+.PC #it244 .ANI_BOX .pq_RETOP{
+	width: 100%;
+	height: 70px;
+	background: url(../images/animation_box/title_top04_2.jpg) no-repeat;
+	font-size: 1.6rem;
+	line-height: 70px;
+	text-shadow: 0 0 0.2em #5e0916, 0 0 0.2em #5e0916,
+    0 0 0.2em #5e0916;
+	color: #fff;
+	text-align: center;
+}
+.PC #it244 .ANI_BG{
+	width: 100%;
+	height: 320px;
+	overflow: hidden;
+	position: relative;
+	background: url(../images/animation_box/ani_bg.jpg) no-repeat;
+}
+.PC #it244 .ANI_BG .CLOUD_LEFT{
+	width: 390px;
+	height: 320px;
+	position: absolute;
+	left: 0;
+	background: url(../images/animation_box/ani_cloud_left.png) no-repeat;
+}
+.PC #it244 .ANI_BG .CLOUD_RIGHT{
+	width: 420px;
+	height: 320px;
+	position: absolute;
+	right: 0;
+	background: url(../images/animation_box/ani_cloud_right.png) no-repeat;
+}
+.PC #it244 .ANI_BG .ANI_TXT{
+	width: 470px;
+	height: 195px;
+	position: absolute;
+	top: 6%;
+	left: 7%;
+	background: url(../images/animation_box/ani_txt.png) no-repeat;
+}
+.PC #it244 .ANI_BG .ANI_BT{
+	width: 50%;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.PC #it244 .ANI_BOX .pq_RECOM_BOX{
+	padding-left: 5px;}
+.PC #it244 .ANI_BG .FAKE_BOARD{
+	width: 350px;
+	height: 250px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: url(../images/animation_box/ani_fake.png) no-repeat;
+}
+.PC #it244 .ANI_BG .REAL_BOARD{
+	width: 355px;
+	height: 195px;
+	position: absolute;
+	top: 51%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: url(../images/animation_box/ani_real.png) no-repeat;
+}
+.PC #it244 .ANI_BG .REAL_BOARD .WORD{
+	width: 90%;
+	height: auto;
+	position: absolute;
+	top: 8%;
+	left: 5%;
+	
+}
+.PC #it244 .ANI_BG .REAL_BOARD .WORD li{
+	text-align: center;
+	margin: 8px 0;
+}
+.PC #it244 .ANI_BG .REAL_BOARD .WORD li.T1{
+	font-size: 2rem;
+	color: #333;
+}
+.PC #it244 .ANI_BG .REAL_BOARD .WORD li.T2{
+	font-size: 3rem;
+	line-height: 2.1em;
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+.PC #it244 .ANI_BG .REAL_BOARD .WORD li .T3{
+	font-size: 1.5rem;
+	line-height: 1.8em;
+	color: #d80000;
+}
+.PC #it244 .ANI_BG .REAL_BOARD .WORD li .T4{
+	font-size: 1.5rem;
+	color: #333;
+	margin-left: 10px;
+}
+
+/*是或否區塊*/
+.PC #it244 .question_area{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+	margin-bottom:10px;
+}
+
+.PC #it244 .question_box{
+	width:320px;
+	height: 310px;
+	margin:0 auto;
+	background-image: url(../images/result/ph-yesorno.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.PC #it244 .question_box p{
+	font-size:6em;
+	line-height: 295px;
+	text-align: center;
+	font-weight: bold;
+	color:#d40095;
+}
+
+/*結果頁-方位外框*/
+.PC #it244 .map_frame{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.PC #it244 .MAP{
+	width:100%;
+	height:0px;
+	padding-bottom: 70.625%;
+	background-repeat:no-repeat;
+	background-image:url(../images/re_ph_bg03.png);
+	position:relative;
+	margin:0 auto;
+	background-size: cover;
+	}
+	
+.PC #it244 .MAP_Z{background-image:url(../images/map_x.jpg);}
+	
+.PC #it244 .MAP .COLOR_BG{
+	width:27.5%;
+	position:absolute;
+	}
+	
+.PC #it244 .MAP .COLOR{
+	width:176px;
+	height:109px;
+	background-repeat:no-repeat;
+	}
+	
+.PC #it244 .MAP .LUCK_ICON{
+	width:35px;
+	height:35px;
+	position:absolute;
+	bottom:5px;
+	left:40%;}
+
+.PC #it244 .MAP .BAD_ICON{
+	width:35px;
+	height:35px;
+	position:absolute;
+	bottom:8px;
+	right: 44%;
+}
+
+/*命運手訣*/
+.PC #it244 .HAND_FATE{
+	position: relative;
+	width: 97%;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.PC #it244 .HAND_FATE .H_BG{
+	width: 100%;
+	height: 0;
+	padding-bottom: 87.5409836065574%;
+	background-image: url(../images/hand_box/scroll_handmap.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.PC #it244 .PH_WORDS{
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.PC #it244 .PH_WORDS img{
+	display: block;
+	width: 30%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.PC #it244 .PH_HANDS{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: -25px; 
+}
+
+.PC #it244 .PH_HANDS img{
+	display: block;
+	width: 60%;
+	height: auto;
+	margin: 0 auto;
+}
+
+/*文字欄位*/
+.PC #it244 .PH_CON{
+	position: absolute;
+	width:90%;
+	height: auto;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.8);
+	left: 5%;
+	bottom: 11%;
+	box-sizing: border-box;
+}
+
+/*結果頁-控制寬度-方位*/
+.PC #it244 .BOX_FRAME{
+	width: 98%;
+	height: auto;
+	margin: 0 auto;
+	margin-top:10px;
+}
+
+/*=================電腦版 免費頁=================*/
+/*免費頁-模糊文上按鈕區塊*/
+.PC #it244 .FR_BTSTYLE{
+	text-shadow: 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff;
+    -webkit-text-shadow: 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff;
+    -moz-text-shadow: 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff;
+    -o-text-shadow: 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff;
+    padding-top: 5px;
+}
+
+/*免費頁-方位*/
+.PC #it244 .MAP_FREE{
+	width:100%;
+	height:0px;
+	padding-bottom: 70.625%;
+	background-repeat:no-repeat;
+	background-image:url(../images/re_ph_bg03.png);
+	position:relative;
+	background-size: cover;
+	margin:0 auto;
+}
+
+.PC #it244 .MAP_FREE .F_BLOCK{
+	position: absolute;
+	width: 80%;
+	height: 366px;
+	background-color: rgba(212, 52, 52, 0.9);
+	top: 9%;
+	left: 9.8%;
+}
+
+.PC #it244 .MAP_FREE .F_BLOCK p{
+	padding-top: 25%;
+	text-align: center;
+}
+
+/*免費頁按鈕*/
+.PC #it244 .free_bt_case{
+	width:100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.PC #it244 .free_bt_case .FR_BTSTYLE2{
+	color:#fcffa0;
+	text-shadow: 1px 1px 0px #6c0000,-1px -1px 0px #6c0000,
+	-1px 1px 0px #6c0000, 1px -1px 0px #6c0000;
+}
+
+.PC #it244 .free_qa .question_box p{
+	font-size:3em;
+}
+
+/*免費頁商品銷售區塊*/
+.PC #it244 .free_promotion{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+	margin-bottom:15px;
+}
+
+.PC #it244 .free_promotion .promo_ph{
+	width:100%;
+	height: auto;
+	margin:0 auto;
+}
+
+.PC #it244 .free_promotion .promo_ph img{
+	display: block;
+	width:100%;
+	height: auto;
+}
+
+/*免費頁-控制手訣按鈕區塊*/
+.PC #it244 .PH_CON .pq_SAMPLE {
+	height:auto;
+}
+
+.PC #it244 .PH_CON .pq_SAMPLE .FR_BTSTYLE{
+	color:#fcffa0;
+	text-shadow: 1px 1px 0px #222222,-1px -1px 0px #222222,
+	-1px 1px 0px #222222, 1px -1px 0px #222222;
+}
+
+/*=================手機版免費頁=================*/
+/*免費頁-方位外框*/
+.MOBILE #it244 .map_frame{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+}
+
+/*免費頁-方位*/
+.MOBILE #it244 .MAP_FREE{
+	position: relative;
+	width:100%;
+	height:0;
+	padding-bottom:70.625%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-image:url(../images/re_ph_bg03.png);
+	position:relative;
+	margin:0 auto;
+	}
+
+.MOBILE #it244 .MAP_FREE .F_BLOCK{
+	position: absolute;
+	width: 80%;
+	height: 50vw;
+	background-color: rgba(212, 52, 52, 0.9);
+	top: 8%;
+	left: 9.8%;
+}
+
+.MOBILE #it244 .MAP_FREE .F_BLOCK p{
+	padding-top: 16%;
+	text-align: center;
+}
+
+/*免費頁按鈕*/
+.MOBILE #it244 .free_bt_case{
+	width:100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.MOBILE #it244 .free_bt_case .FR_BTSTYLE2{
+	color:#fcffa0;
+	text-shadow: 1px 1px 0px #6c0000,-1px -1px 0px #6c0000,
+	-1px 1px 0px #6c0000, 1px -1px 0px #6c0000;
+}
+
+.MOBILE #it244 .free_qa .question_box p{
+	font-size:2.6em;
+}
+
+.MOBILE #it244 .FR_BTSTYLE{
+	text-shadow: 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff;
+    -webkit-text-shadow: 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff;
+    -moz-text-shadow: 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff;
+    -o-text-shadow: 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff;
+}
+
+/*控制說明文字*/
+.MOBILE #it244 .pq_SAMPLE{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+	background-image: none;
+}
+
+.MOBILE #it244 .pq_SAMPLE p > span > span{
+	width: 100%;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.MOBILE #it244 .pq_SAMPLE li > span > span{
+	width: 100%;
+	text-align: center;
+	padding-top: 5px;
+}
+
+/*免費頁商品銷售區塊*/
+.MOBILE #it244 .free_promotion{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+	margin-bottom:15px;
+}
+
+.MOBILE #it244 .free_promotion .promo_ph{
+	width:100%;
+	height: auto;
+	margin:0 auto;
+}
+
+.MOBILE #it244 .free_promotion .promo_ph img{
+	display: block;
+	width:100%;
+	height: auto;
+}
+
+/*控制手訣按鈕區塊*/
+.MOBILE #it244 .PH_CON .pq_SAMPLE {
+	height:auto;
+}
+
+.MOBILE #it244 .PH_CON .pq_SAMPLE .FR_BTSTYLE{
+	color:#fcffa0;
+	text-shadow: 1px 1px 0px #222222,-1px -1px 0px #222222,
+	-1px 1px 0px #222222, 1px -1px 0px #222222;
+}
+
+/*免費頁-手訣按鈕區塊*/
+.MOBILE #it244 .formb_bt{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+	position: absolute;
+	top:50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+/*=================手機版=================*/
+/*=================整體框架區塊=================*/
+
+/*手機版消失區*/
+.MOBILE #it244 .PRINT_BT , .MOBILE #it244-wrapper .float_box ,.MOBILE #it244 .forpc-ph ,.MOBILE #it244 .FREE_NO_WORDS{display: none;}
+
+.MOBILE #it244{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background-image: url(../images/bg.jpg);
+	background-size: 300% auto;
+	background-repeat: no-repeat;
+	background-position: top 30px center;
+	-webkit-box-sizing: border-box;
+	background-color: #fb4157;
+}
+
+.MOBILE #it244 .frame{
+	width: 100%;
+	height: auto;
+	overflow:hidden;
+	margin:0 auto;
+}
+
+.MOBILE #it244 .content_top img,
+.MOBILE #it244 .content_foot img{
+    display: block;
+    width:100%;
+    height: auto;
+    margin:0 auto;
+}
+
+/*=================結果頁框架=================*/
+.MOBILE #it244 .result_top{
+	width:100%;
+	height:auto; 
+	overflow:hidden;
+	margin: 0 auto;
+}
+
+.MOBILE #it244 .result_top h1{
+	width:100%;
+	height: 0;
+	padding-bottom:38.66666666%;
+	margin:0 auto;
+	background-image: url(../images/re_title_top.png);
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	margin-top:45px;
+}
+
+/*輸入頁動態區塊*/
+.MOBILE #it244 .animation_block{
+	width:100%;
+	height: 0;
+	padding-bottom: 60%;
+	margin:0 auto;
+	background-image: url(../images/hero_input_topbg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.MOBILE #it244 .fatechart{
+	width:100%;
+	height: 0;
+	padding-bottom: 57.27272727%;
+	margin:0 auto;
+	overflow: hidden;
+	background-image: url(../images/input/in_animated_bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.MOBILE #it244 .fatechart .shine_area{
+	width:100%;
+	height: 0;
+	padding-bottom: 57.27272727%;
+	margin:0 auto;
+	background-image: url(../images/input/in_animated_stars.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.MOBILE #it244 .fatechart .fadeinout{
+	animation-name: fadeInOut;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/*結果頁內容裝飾框架*/
+.MOBILE #it244 .content{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto;
+	background-image:url(../images/deco_bg.jpg);
+	background-size:100% auto;
+	margin-bottom:10px;
+}
+
+.MOBILE #it244 .content .content_top img,
+.MOBILE #it244 .content .content_foot img{
+    display: block;
+    width:100%;
+    height: auto;
+    margin:0 auto;
+}
+
+/*=================輸入頁=================*/
+/*輸入頁表頭區塊*/
+.MOBILE #it244 .input_frame{
+	width:100%;
+	height:auto; 
+	overflow:hidden;
+    margin:0 auto;
+}
+
+.MOBILE #it244 .input_top{
+	width:100%;
+	height:auto; 
+	overflow:hidden;
+    margin:0 auto;
+}
+
+.MOBILE #it244 .input_top h1{
+	width:100%;
+	height:0;
+	padding-bottom: 41.4285714285714%;
+	background-image:url(../images/hero_title_input.png);
+	background-size: 100% auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-indent:-9999px;
+    margin-top:45px;
+}
+
+/*輸入頁內容裝飾框架*/
+.MOBILE #it244 .input_content{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto;
+	background-image:url(../images/deco_bg.jpg);
+	background-size:100% auto;
+}
+
+/*輸入頁內容區塊*/
+.MOBILE #it244 .con_box{ 
+	width:90%;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto;
+}
+
+.MOBILE #it244 .con_box img{
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+/*第一則推廣區塊*/
+.MOBILE #it244 .first_box{margin-top:10px;}
+.MOBILE #it244 .second_box{
+	width:100%;
+	height: auto;
+	margin:0 auto;
+	overflow: hidden;
+}.MOBILE #it244 .second_box img{
+	display:block;
+	width:98%;
+	height: auto;
+	margin:0 auto;
+}
+
+.MOBILE #it244 .promo_block{
+	width:95%;
+	height: auto;
+	margin:0 auto;
+	overflow: hidden;
+}
+
+.MOBILE #it244 .deco_line{
+	border-bottom: 2px solid #f2f2f2;
+    width: 100%;
+    margin: 16px auto;
+}
+
+/*輸入頁 清單*/
+.MOBILE #it244 .norm_case{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #bd0676;
+    box-sizing: border-box;
+}
+
+.MOBILE #it244 .norm_case .norm_title{
+    width: 100%;
+    height: 60px;
+    font-size: 1.6em;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0px auto;
+}
+
+.MOBILE #it244 .norm_case .bar1{
+	background-image: url(../images/title_bar.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.MOBILE #it244 .norm_case .bar2{
+	background-color: #bd0676;
+	border: 1px solid #bd0676;
+}
+
+.MOBILE #it244 .norm_case .norm_content{
+    width: 95%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.MOBILE #it244 .icon-1{
+    background-image: url(../images/icon-1.png);
+    background-position: top left 5px;
+    background-repeat: no-repeat;
+    background-size: 28px auto;
+}
+
+.MOBILE #it244 .norm_case .list_title{
+	width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.MOBILE #it244 .norm_case .list_title::before{
+    content: '';
+    display: inline-block;
+    width:30px;
+    height: auto;
+    padding-right:5px;
+}
+
+.MOBILE #it244 .norm_case .list_item{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom:15px;
+}
+
+.MOBILE #it244 .norm_case .list_item .disc{
+    width: 100%;
+    list-style: disc;
+    list-style-position: outside;
+    padding: 0px 0px 0px 30px;
+    box-sizing: border-box;
+    font-size:1.1rem;
+    line-height: 2rem;
+}
+
+.MOBILE #it244 .norm_case .list_item .marker li::marker{color:#b46127;}
+
+.MOBILE #it244 .norm_case .list_item .sec_item{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.MOBILE #it244 .norm_case .list_item .sec_item li::before{
+    content:'∟';
+    display: inline-block;
+}
+
+.MOBILE #it244 .norm_case .mg_bt0{margin-bottom:0px;}
+
+/*獨門絕學奇門遁甲區塊*/
+.MOBILE #it244 .in_double_case{
+	width:98%;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	margin:0 auto;
+}
+
+.MOBILE #it244 .in_double_case .inph_box{
+	width:90%;
+	margin-bottom:10px;
+}.MOBILE #it244 .in_double_case .inph_box img{
+	display: block;
+	width:90%;
+	height: auto;
+}
+
+.MOBILE #it244 .in_double_case .inph_text{width:100%;}
+
+/*=================結果頁區塊=================*/
+/*雙欄配圖文字區塊*/
+.MOBILE #it244 .two_block_main {
+	width: 95%;
+	height: auto;
+	overflow: hidden;
+	margin:0 auto;
+}
+
+.MOBILE #it244 .two_block_main ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.MOBILE #it244 .two_block_main .item_ph {
+	width: 100%;
+	height: auto;
+}
+
+.MOBILE #it244 .two_block_main .item_ph img {
+	display: block;
+	width: 65%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.MOBILE #it244 .two_block_main .item_text {
+	width: 100%;
+}
+
+/*邊框*/
+.MOBILE #it244 .border_frame{
+	box-sizing: border-box;
+	border: 2px solid #e83432;
+	border-top:none;
+}
+
+/*控制pq捲軸高度*/
+.MOBILE .pq_BIGWORD1 ul li:nth-child(2){line-height: 1.4em;}
+
+/*個人資料欄位*/
+.MOBILE #it244 .INFO_BOX{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.MOBILE #it244 .INFO_BOX p{
+	text-align: center;
+	font-size: 1.1em;
+	line-height: 1.6em;
+}
+
+.MOBILE #it244 .INFO_BOX span.GENDER{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: -8px;
+}
+
+.MOBILE #it244 .INFO_BOX span.GENDER img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/*時盤人資料欄位*/
+.MOBILE #it244 .INFO_BOX_TIME{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.MOBILE #it244 .INFO_BOX_TIME .IN_TITLE{
+	color: #555555;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+/*時盤雙排2022*/
+.MOBILE #it244 .INFO_BOX_TIME .times_box{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+	margin:0 auto;
+	display: flex;
+	flex-direction: column;
+	margin-bottom:10px;
+	border:1px solid #ff6476;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.MOBILE #it244 .times_box .square_title{
+	width:100%;
+	height: 45px;
+	line-height: 45px;
+	background-color: #ff6476;
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color:#ffffff;
+}
+
+.MOBILE #it244 .times_box .times_info{
+	width:100%;
+	height: auto;
+}
+
+.MOBILE #it244 .times_box .times_info ul{
+	width:100%;
+	height: 65px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.MOBILE #it244 .times_box .times_info li{
+	font-size:1.1em;
+	line-height: 1.6rem;
+}
+
+/*奇門遁甲本命命盤*/
+.MOBILE #it244 .JIMEN_CHART{
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	background-color: #eee;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.MOBILE #it244 .JIMEN_CHART p{
+	font-weight:bold;
+	font-size: 2.2rem;
+	text-align: center;
+	color: #666666;
+}
+
+/*奇門遁甲時盤命盤*/
+.MOBILE #it244 .JIMEN_CHART2{
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	background-color: #e8f3e1;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.MOBILE #it244 .JIMEN_CHART2 p{
+	font-weight:bold;
+	font-size: 2.2rem;
+	text-align: center;
+	color: #4c5d41;
+}
+
+/*本命表格欄位*/
+.MOBILE #it244 .FOUR_BOX{
+	width: 100%;
+}
+
+.MOBILE #it244 .FOUR_BOX li{
+	height: 45px;
+	line-height: 45px;
+}
+
+.MOBILE #it244 .TWO_BOX li{
+	height: 45px;
+	line-height: 45px;
+}
+
+.MOBILE #it244 .TWO_BOX{
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.MOBILE #it244 .T_BG_01{background-color: #eb6039;}
+.MOBILE #it244 .T_BG_02{background-color: #9c4e02;}
+.MOBILE #it244 .T_BOR_01{border:1px solid #eb6039;}
+.MOBILE #it244 .T_BOR_02{border:1px solid #9c4e02;}
+
+.MOBILE #it244 .PV_BOARD{
+	width: 100%;
+}
+
+/*結果頁-重點區塊*/
+/*第二標題區塊*/
+.MOBILE #it244 .sub_title{
+	width: 100%;
+	height: auto;
+	margin:0 auto;
+	overflow: hidden;
+}
+
+.MOBILE #it244 .sub_title p{
+	color:#555555;
+	font-size:1.3em;
+	font-weight: bold;
+	line-height: 1.7rem;
+	text-align: center;
+}
+
+.MOBILE #it244 .p_pink{color:#FF1493;}
+.MOBILE #it244 .point_scroll{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+	margin-top:0px;
+	margin-bottom:10px;
+}
+
+.MOBILE #it244 .point_scroll .p_title{
+	width:100%;
+	font-size:1.3em;
+	text-align: center;
+}
+
+.MOBILE #it244 .item_img01{
+	background-image: url(../images/result/ph-fate01.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.MOBILE #it244 .item_img02{
+	background-image: url(../images/result/ph-fate02.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.MOBILE #it244 .item_img03{
+	background-image: url(../images/result/ph-fate05.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.MOBILE #it244 .point_scroll .items_box{
+	width:100%;
+	height: 0px;
+	padding-bottom: 20.3389830508475%;
+	margin:0 auto;
+}
+
+.MOBILE #it244 .point_scroll .items_box p{
+	font-size:6vw;
+	font-weight:bold;
+	line-height: 18vw;
+	text-align: center;
+}
+
+/*裝飾框副標*/
+.MOBILE #it244 .deco_frame{
+	width:100%;
+	height: auto;
+	margin:0 auto;
+	text-align: center;
+	background-color: #fff2d7;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.MOBILE #it244 .deco_frame li{
+	font-weight:bold;
+	padding:5px 0px;
+	color:#d12427;
+}
+
+.MOBILE #it244 .deco_frame li:nth-child(1){
+	padding-bottom:0px;
+}
+
+.MOBILE #it244 .deco_frame li:nth-child(2){
+	color:#555555;
+}
+
+.MOBILE #it244 .deco_frame .small_text{
+	font-size:1.4rem;
+	line-height: 1.7rem;
+}
+
+.MOBILE #it244 .deco_frame .point_text{
+	font-size:1.7rem;
+	line-height: 2rem;
+}
+
+.MOBILE #it244 .deco_frame img{
+	display: block;
+	width:92%;
+	height: auto;
+	margin:0 auto;
+}
+
+.MOBILE #it244 .deco_frame .username-woman{color:#FF1493;}
+.MOBILE #it244 .deco_frame .username-man{color:#0088ff;}
+
+/*結果頁-用神區塊*/
+.MOBILE #it244 .thegods{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+	margin:15px 0px 5px 0px;
+}
+
+.MOBILE #it244 .thegods .gods_box{
+	width: 100%;
+	height: 0px;
+	padding-bottom: 34.7222222%;
+	margin:0 auto;
+	overflow: hidden;
+}
+
+.MOBILE #it244 .thegods .gods_box p{
+	text-align: center;
+	font-size:10vw;
+	font-weight:bold;
+	line-height: 29vw;
+	text-indent: 20%;
+}
+
+.MOBILE #it244 .thegods .nice_gods{
+	color:#e90301;
+	background-image: url(../images/result/ph-fate03.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.MOBILE #it244 .thegods .bad_gods{
+	color:#a300e6;
+	background-image: url(../images/result/ph-fate04.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*結果頁-圖示項目清單*/
+.MOBILE #it244 .icon_list{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.MOBILE #it244 .icon_list ul{
+	width:100%;
+	box-sizing: border-box;
+	margin-top:10px;
+}
+
+.MOBILE #it244 .icon_list ul.second_type{
+	margin-top:0px;
+	margin-bottom:10px;
+}
+
+.MOBILE #it244 .icon_list li.icon-gods{
+	background: transparent url(../images/icon-2.png) no-repeat;
+	background-size: 28px 28px;
+	background-position-y: 1px;
+	padding-left: 35px;
+	margin-bottom:15px;
+}
+
+.MOBILE #it244 .icon_list li.icon-bad-gods{
+	background: transparent url(../images/icon-2-2.png) no-repeat;
+	background-size: 28px 28px;
+	background-position-y: 1px;
+	padding-left: 35px;
+	margin-bottom:15px;
+}
+
+.MOBILE #it244 .icon_list li:last-child{
+	margin-bottom:0px;
+}
+
+/*XX煞*/
+.MOBILE #it244 .icon_list2{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.MOBILE #it244 .icon_list2 ul{
+	width:100%;
+	box-sizing: border-box;
+	margin-top:10px;
+}
+
+.MOBILE #it244 .icon_list2 li{
+	font-size:1.1em;
+	font-weight:bold;
+}
+
+.MOBILE #it244 .icon_list2 li.icon-special{
+	background: transparent url(../images/icon-1.png) no-repeat;
+	background-size: 28px 28px;
+	background-position-y: 1px;
+	padding-left: 35px;
+	margin-bottom:6px;
+}
+
+.MOBILE #it244 .icon_list2 .mg_t0{margin-top:0px;}
+
+/*XX煞 引導文字*/
+.MOBILE #it244 .list_prewords{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+	margin:12px 0px 6px 0px;
+}
+
+/*控制pq日曆*/
+.MOBILE #it244 .pq_CALENDAR1 .TIME .MONTH{
+	font-size:1.4em;
+	line-height: 1.8rem;
+}
+
+.MOBILE #it244 .pq_CALENDAR1 .TIME .T05{
+	font-size:1.1em;
+	line-height: 1.6rem;
+}
+
+.MOBILE #it244 .calendar_area .pq_RECOM_BOX{padding:0px;}
+
+.MOBILE #it244 .calendar_area .pq_CALENDAR1{margin:0px;}
+
+.MOBILE #it244 .calendar_area .pq_CALENDAR1 .DATE .YEAR{
+	font-size:1.4em;
+	color:yellow;
+	padding-top:4px;
+}
+
+/*日曆說明文字區塊*/
+.MOBILE #it244 .tips_area{
+	width:95%;
+	height: auto;
+	overflow: hidden;
+	margin:0 auto;
+	margin-top:5px;
+}
+
+.MOBILE #it244 .tips_area p{
+	font-size:1em;
+	line-height: 1.6rem;
+	color:red;
+}
+
+/*時盤說明文字區塊*/
+.MOBILE #it244 .tips_area2{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+	margin:0 auto;
+}
+
+.MOBILE #it244 .tips_area2 p{
+	font-size:1.1em;
+	line-height: 1.6rem;
+}
+
+/*撥雲動畫-MOBILE*/
+.MOBILE #it244 .ANI_BOX{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 20px auto;
+	border: 2px solid #970016;
+	background-color: #492505;
+	box-sizing: border-box;
+}
+.MOBILE #it244 .ANI_BOX .pq_RETOP{
+	width: 100%;
+	height: auto;
+	padding: 10px 0;
+	background: url(../images/animation_box/title_top04_2.jpg) no-repeat center;
+	background-size: cover;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	text-shadow: 0 0 0.2em #5e0916, 0 0 0.2em #5e0916,
+    0 0 0.2em #5e0916;
+	color: #fff;
+	text-align: center;
+}
+.MOBILE #it244 .ANI_BG{
+	width: 100%;
+	height: 320px;
+	overflow: hidden;
+	position: relative;
+	background: url(../images/animation_box/ani_bg.jpg) no-repeat center;
+	background-size: cover;
+}
+.MOBILE #it244 .ANI_BG .CLOUD_LEFT{
+	width: 390px;
+	height: 320px;
+	position: absolute;
+	left: 0;
+	background: url(../images/animation_box/ani_cloud_left.png) no-repeat;
+}
+.MOBILE #it244 .ANI_BG .CLOUD_RIGHT{
+	width: 420px;
+	height: 320px;
+	position: absolute;
+	right: 0;
+	background: url(../images/animation_box/ani_cloud_right.png) no-repeat;
+}
+.MOBILE #it244 .ANI_BG .ANI_TXT{
+	width: 300px;
+	height: auto;
+	padding-bottom: 58%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-70%);
+	background: url(../images/animation_box/ani_txt_m.png) no-repeat;
+	background-size: 100% auto;
+}
+.MOBILE #it244 .ANI_BG .ANI_BT{
+	width: 90%;
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.MOBILE #it244 .ANI_BOX .pq_RECOM_BOX{
+	padding-left: 5px;}
+.MOBILE #it244 .ANI_BG .FAKE_BOARD{
+	width: 300px;
+	height: 220px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: url(../images/animation_box/ani_fake.png) no-repeat;
+	background-size: 100% auto;
+}
+.MOBILE #it244 .ANI_BG .REAL_BOARD{
+	width: 300px;
+	height: 220px;
+	position: absolute;
+	top: 51%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: url(../images/animation_box/ani_real.png) no-repeat;
+	background-size: 100% auto;
+}
+.MOBILE #it244 .ANI_BG .REAL_BOARD .WORD{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 4%;
+}
+.MOBILE #it244 .ANI_BG .REAL_BOARD .WORD li{
+	text-align: center;
+	margin: 8px 0;
+}
+.MOBILE #it244 .ANI_BG .REAL_BOARD .WORD li.T1{
+	font-size: 2rem;
+	color: #333;
+}
+.MOBILE #it244 .ANI_BG .REAL_BOARD .WORD li.T2{
+	font-size: 3rem;
+	line-height: 1.3em;
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+.MOBILE #it244 .ANI_BG .REAL_BOARD .WORD li .T3{
+	font-size: 1.5rem;
+	line-height: 2em;
+	color: #d80000;
+}
+.MOBILE #it244 .ANI_BG .REAL_BOARD .WORD li .T4{
+	font-size: 1.5rem;
+	color: #333;
+	margin-left: 10px;
+}
+
+.MOBILE #it244 .ANI_BG .REAL_BOARD .WORD li:nth-child(2){
+	padding-top:6px;
+}
+
+@media screen and (max-width:320px){/*for i5 SE*/
+	.MOBILE #it244 .ANI_BG .ANI_TXT{
+		width: 260px;}
+	.MOBILE #it244 .ANI_BOX .pq_RETOP{
+	font-size: 1.1rem;}
+	.MOBILE #it244 .ANI_BG .REAL_BOARD{
+		width: 260px;}
+	.MOBILE #it244 .ANI_BG .FAKE_BOARD{
+		width: 260px;}
+	.MOBILE #it244 .ANI_BG .REAL_BOARD .WORD li{
+		margin: 1px 0;}
+}
+@media screen and (min-width:480px){/*for 橫*/
+	.MOBILE #it244 .ANI_BG .ANI_TXT{
+		top: 10%;
+		left: 24%;
+		transform: none;}
+	.MOBILE #it244 .ANI_BG .ANI_BT{
+		bottom: 5%;}
+}
+
+/*是或否區塊*/
+.MOBILE #it244 .question_area{
+	width:70%;
+	height: auto;
+	overflow: hidden;
+	margin:0 auto;
+}
+
+.MOBILE #it244 .question_box{
+	width:100%;
+	height: 0px;
+	padding-bottom: 96.875%;
+	margin:0 auto;
+	background-image: url(../images/result/ph-yesorno.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom:8px;
+}
+
+.MOBILE #it244 .question_box p{
+	font-size:17vw;
+	line-height: 53vw;
+	text-align: center;
+	font-weight: bold;
+	color:#d40095;
+}
+
+/*結果頁-流年命盤-開運磁場*/
+.MOBILE #it244 .MAP{
+	width:100%;
+	height:0;
+	padding-bottom:70.625%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-image:url(../images/re_ph_bg03.png);
+	position:relative;
+	margin:0 auto;
+	}
+	
+.MOBILE #it244 .MAP_Z{background-image:url(../images/map_x.jpg);}
+	
+.MOBILE #it244 .MAP .COLOR_BG{
+	width:27.5%;
+	position:absolute;
+	}
+	
+.MOBILE #it244 .MAP .COLOR{
+	width:100%;
+	height:0;
+	padding-bottom:61.93181818%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	}
+	
+.MOBILE #it244 .MAP .LUCK_ICON{
+	width:31%;
+	height:0;
+	padding-bottom:31%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	position:absolute;
+	bottom:2px;
+	left:35%;}
+
+.MOBILE #it244 .MAP .BAD_ICON{
+	width:31%;
+	height:0;
+	padding-bottom:31%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	position:absolute;
+	bottom:5px;
+	right: 36%;
+}
+
+/*命運手訣*/
+.MOBILE #it244 .HAND_FATE{
+	position: relative;
+	width: 97%;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.MOBILE #it244 .HAND_FATE .H_BG{
+	width: 100%;
+	height: 0;
+	padding-bottom: 87.5409836065574%;
+	background-image: url(../images/hand_box/scroll_handmap.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.MOBILE #it244 .PH_WORDS{
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.MOBILE #it244 .PH_WORDS img{
+	display: block;
+	width: 40%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.MOBILE #it244 .PH_HANDS{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: -25px; 
+}
+
+.MOBILE #it244 .PH_HANDS img{
+	display: block;
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+}
+
+/*結果頁-控制寬度-方位*/
+.MOBILE #it244 .BOX_FRAME{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	margin-top:10px;
+}
+
+.MOBILE #it244 .pq_BT_FREE1 .BR{
+	font-size: 1.1rem;
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+/*=========================防止iPADmini沒有背景================*/
+@media (max-width: 768px){
+    .PC #it244{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background-image: url(../images/bg.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        background-attachment: initial;
+        background-color: #fb4157;
+    }
+}
+/*=========================防止iPADmini沒有背景================*/
