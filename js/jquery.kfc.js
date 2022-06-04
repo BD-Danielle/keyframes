@@ -38,8 +38,8 @@
     self.keyframesDefine(self.options);
 
     if (self.callback) {
-      self.callback();
       self.playKeyframes(self.options);
+      self.callback();
       return;
     }
     self.playKeyframes(self.options);
